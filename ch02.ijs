@@ -16,8 +16,6 @@ mimetypes_jfilesrc_ =:  mimetypes_jfilesrc_ , ('application/octet-stream';'woff'
 end.
 )
 
-addMimeTypes''
-
 html =: 0 : 0
 <!DOCTYPE HTML>
 <html lang="en-US">
@@ -49,6 +47,7 @@ html =: 0 : 0
 
 jev_get=: 3 : 0
 if. DEBUG do. checkLatestScript'' end.
+addMimeTypes''
 render html
 )
 
